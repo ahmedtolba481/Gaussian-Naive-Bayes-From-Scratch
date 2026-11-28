@@ -70,7 +70,7 @@ The “naive” part is the assumption that features are **independent given the
 
 ### Task 4 — Experiments: Breaking the Naive Assumption
 - Finds the most informative single feature — **worst concave points** (0.929 accuracy alone) — then duplicates it with **total copies 1, 3, 5, 10**.
-- Accuracy stays around 0.929–0.938, but confidence peaks at 0.999 (3–5 copies) and then falls back to 0.993 (10 copies). Confidence and accuracy do **not** move together.
+- Accuracy stays flat at 0.929 for 1 to 10 copies, but confidence peaks at 0.999 (3–5 copies) and then falls back to 0.993 (10 copies). Confidence and accuracy do **not** move together.
 - **Sanity-data version:** duplicating the single sanity feature keeps the prediction at class 0, but its probability rises from 0.9999 to 1.0 — overconfidence with no new information.
 
 ### Task 5 — Visualisation
